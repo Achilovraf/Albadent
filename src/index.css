@@ -1,0 +1,23 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--black: #311f09;
+	--dark-blue: #00245c;
+	--ocean: #1c4c5c;
+	--gray-brown: #907c74;
+	--red-orange: #f86e50;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+html,
+body,
+#app {
+	overflow-x: hidden;
+}
