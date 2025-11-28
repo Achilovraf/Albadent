@@ -1,6 +1,6 @@
 <!-- src/App.vue -->
 <template>
-  <AnimatedCursor />
+  <!-- <AnimatedCursor /> -->
   <div class="flex flex-col min-h-screen">
 
     <HeaderComponent />
@@ -10,7 +10,7 @@
 
     <main class="flex-1 relative">
       <RouterView />
-      <ScrollButton customClass="" />
+      <CartButton />
 
     </main>
     <FooterComponent />
@@ -22,15 +22,15 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import HeaderComponent from '@/components/Header.vue'
 import FooterComponent from '@/components/Footer.vue'
-import ScrollButton from '@/components/ScrollButton.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 import AnimatedCursor from './components/AnimatedCursor.vue'
+import CartButton from '@/components/CartButton.vue'
 
 export default {
   components: {
     HeaderComponent,
     FooterComponent,
-    ScrollButton,
+    CartButton,
     Breadcrumb,
     AnimatedCursor
   },
